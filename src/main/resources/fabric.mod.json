@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "banned-commands",
+	"version": "${version}",
+	"name": "Banned Commands",
+	"description": "Blocks specific commands per dimension.",
+	"authors": ["Me!"],
+	"license": "CC0-1.0",
+	"environment": "server",
+	"entrypoints": {
+		"main": ["com.bannedcommands.BannedCommands"]
+	},
+	"mixins": [
+		"banned-commands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
